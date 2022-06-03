@@ -1,0 +1,25 @@
+<form class="example-form">
+
+  <div class="bar">
+
+    <input type="text" class="text" id="search_text" #search_text placeholder="Search" [formControl]="control" [matAutocomplete]="auto">
+
+    <button button class="button" (click)="link(search_text.value)">
+
+      Search Google
+      
+    </button>
+
+  </div>
+
+  <mat-autocomplete #auto="matAutocomplete">
+
+    <mat-option *ngFor="let phrase of filteredPhrases | async" [value]="phrase">
+
+      {{phrase}}
+
+    </mat-option>
+
+  </mat-autocomplete>
+
+</form>

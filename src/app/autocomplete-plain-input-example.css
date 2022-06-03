@@ -1,0 +1,46 @@
+.example-full-width {
+  width: 100%;
+}
+
+
+.bar {
+  margin: 0 auto;
+  width: 400px;
+  border: 1px solid #000000;
+  background-color: white;
+}
+
+
+.bar:hover {
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+
+
+.bar:focus-within {
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+  outline: none;
+}
+
+
+.text {
+  position: relative;
+  left: 7px;
+  height: 20px;
+  margin-top: 20px;
+  border: none;
+  width: 385px;
+  font-size: 15px;
+  outline: none;
+}
+
+
+.button {
+  position: relative;
+  height: 30px;
+  left: 305px;
+}
+
+
+::ng-deep .mat-autocomplete-panel {
+  max-height: 200px !important;
+}
