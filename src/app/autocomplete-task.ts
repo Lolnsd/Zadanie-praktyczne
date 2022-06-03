@@ -6,13 +6,13 @@ import data from 'src/assets/data.json';
 
 
 @Component({
-  selector: 'autocomplete-plain-input-example',
-  templateUrl: 'autocomplete-plain-input-example.html',
-  styleUrls: ['autocomplete-plain-input-example.css'],
+  selector: 'autocomplete-task',
+  templateUrl: 'autocomplete-task.html',
+  styleUrls: ['autocomplete-task.css'],
 })
 
 
-export class AutocompletePlainInputExample implements OnInit {
+export class AutocompleteTask implements OnInit {
   private Phrases: string[] = data;
   control = new FormControl();
   filteredPhrases: Observable<string[]>;
